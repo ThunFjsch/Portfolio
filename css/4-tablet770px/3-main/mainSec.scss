@@ -1,0 +1,132 @@
+@import "../../0-partial/std-mixin.scss";
+@import "../../0-partial/std-main.scss";
+@import "../../0-partial/std-header.scss";
+
+/*für die About me text classe*/
+$at-heihgt: 25%;
+$at-padding: 25px;
+/*für das About me img*/
+$ai-border: 50%;
+$ai-width: 300px;
+$ai-marginL: 20%;
+$ai-marginB: 5%;
+/*für das Thumbnail*/
+$tn-marginT: 25px;
+$tn-marginB: 25px;
+/*für den Thumbnail title*/
+$tt-height: 100px;
+$tt-fontS: 34px;
+/*für den Thumbnail Text*/
+$tText-marginL: 2%;
+$tText-marginB: 15px;
+$Ttext-height: 100px;
+$tText-font: 34px;
+/*für das Thumbnail img*/
+$ti-height: 250px;
+$ti-width: 300px;
+/*für den Layer*/
+$layer-width: 100%;
+$layer-height: auto;
+$layer-top: 200px;
+$layer-left: 0;
+
+.aboutme-text{
+    @include std-formatting();
+    @include std-aboutmeText();
+
+    margin: 0;
+    margin-top: 15%;
+    font-size: 18px;
+    width: 700px;
+}
+
+.about-img{
+    @include std-aboutmeImg();
+    margin: 0;
+    margin-left: 25%;
+}
+
+.main-title{
+    @include std-title();
+    font-size: 25px;
+}
+
+.thumbnail{
+    @include std-formatting();
+    @include std-thumbnail();
+    width: 200px;
+    margin-right: 25px;
+}
+
+.thumbnail-title{
+    @include std-thumbnailTitle();
+    font-size: 25px;
+    padding-top: 15px;
+    height: 60px;
+}
+.thumbnail-text{
+    @include std-thumbnailText();
+    font-size: 25px;
+}
+.thumbnail-img{
+    @include std-thumbnailImg();
+    width: 200px;
+    height:200px;
+}
+
+.layer{
+    @include std-layer();
+
+    background-color: #28462a;
+}
+
+.layer-title{
+    position: fixed;
+    top: 0;
+    left: 100px;
+
+    width: 100%;
+    height: 90px;
+
+    text-align: left;
+    padding-left: 100px;
+    padding-top: 60px;
+    font-size: 70px;
+    background-color: #416944;
+}
+
+.layer-img{
+    width: 100%;
+    height: 600px;
+}
+
+.layer-text{
+    height: 900px;
+    overflow: scroll;
+    p{
+        @include std-formatting();
+        text-align: left;
+        padding: 25px;
+        font-size: 17px;
+    }
+}
+
+.thumbnail-inline-content{
+    display: inline;
+    float: left;
+    margin-right: 20px;
+}
+
+.thumbnail-inline{
+    padding: 0;
+    margin: 0;
+    float: left;
+    display: inline;
+}
+
+.code-sample{
+    overflow: scroll;
+    height: 600px;
+    width: 100%;
+    background-color: #b1b1b1;
+}

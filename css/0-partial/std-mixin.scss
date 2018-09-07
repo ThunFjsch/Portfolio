@@ -1,0 +1,17 @@
+/*colors*/
+$header-backcolor: #416944;
+$nav-backcolor: $header-backcolor;
+$color: white;
+
+/*std-formatings*/
+@mixin std-formatting{
+    margin: 0;
+    padding: 0;
+
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    font-size: 24px;
+
+    background-color: transparent;
+}

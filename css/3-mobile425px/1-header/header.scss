@@ -1,0 +1,21 @@
+@import "../../0-partial/std-mixin.scss";
+@import "../../0-partial/std-header.scss";
+
+$header-height: 200px;
+$header-lef: 200px;
+$header-centerTitle: 60px;
+$header-leftTitle: 250px;
+
+header{
+    @include std-formatting;
+    @include headerMobile-position;
+    @include headerMobile-title;
+
+    background-color: $header-backcolor;
+    color: $color;
+    height: 150px;
+
+    h1{
+        font-size: 44px;
+    }
+}

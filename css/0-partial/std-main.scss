@@ -1,0 +1,98 @@
+@import "std-mixin.scss";
+
+/*für die About me text classe*/
+$at-heihgt: 25%;
+$at-padding: 25px;
+/*für das About me img*/
+$ai-border: 50%;
+$ai-width: 60%;
+$ai-marginT: 5%;
+$ai-marginL: 20%;
+$ai-marginB: 5%;
+/*für das Thumbnail*/
+$tn-marginT: 25px;
+$tn-marginB: 25px;
+/*für den Thumbnail title*/
+$tt-height: 100px;
+$tt-fontS: 70px;
+/*für den Thumbnail Text*/
+$tText-marginL: 2%;
+$tText-marginB: 15px;
+$Ttext-height: 200px;
+$tText-font: 60px;
+/*für das Thumbnail img*/
+$ti-height: 500px;
+$ti-width: 100%;
+/*für den Layer*/
+$layer-width: 100%;
+$layer-height: auto;
+$layer-top: 200px;
+$layer-left: 0;
+
+$mt-size: 45px;
+
+@mixin std-aboutmeText{
+    margin: 0;
+    margin-top: $at-heihgt;
+    padding: $at-padding;
+
+    
+}
+
+@mixin std-aboutmeImg{
+    border-radius: $ai-border;
+    width: $ai-width;
+    
+    margin: 0;
+    margin-top: $ai-marginT;
+    margin-left: $ai-marginL;
+    margin-bottom: $ai-marginB;
+}
+
+@mixin std-thumbnail{
+    text-align: center;
+    width: 200%;
+    height: auto;
+    background-color: #416944;
+    margin: 8%;
+    margin-top: $tn-marginT;
+    margin-bottom: $tn-marginB;
+}
+
+@mixin std-thumbnailTitle{
+    height: $tt-height;
+    font-size: $tt-fontS;
+
+    border-bottom: 3px solid white;
+}
+
+@mixin std-thumbnailText{
+    height: $Ttext-height;
+    font-size: $tText-font;
+
+    margin-left: $tText-marginL;
+    margin-bottom: $tText-marginB;
+    text-align: left;
+}
+
+@mixin std-thumbnailImg{
+    height: $ti-height;
+    width: $ti-width;
+
+    background-color: green
+}
+
+@mixin std-layer{
+    width: 100%;
+    
+    position: fixed;
+    top: 150px;
+    left: 0;
+
+}
+
+@mixin std-title{
+    @include std-formatting;
+
+    font-size: $mt-size;
+}

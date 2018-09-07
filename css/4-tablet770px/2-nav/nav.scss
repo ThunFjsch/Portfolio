@@ -1,0 +1,27 @@
+@import "../../0-partial/std-mixin.scss";
+@import "../../0-partial/std-nav.scss";
+
+$nav-height: 100px;
+$nav-width: 100px;
+
+nav{
+    @include navMobile-position();
+}
+
+.mobile-nav-layer{
+    @include navMobile-layer();
+}
+
+.mobile-nav-layer-exit{
+    @include navMobile-layerExit();
+}
+
+.nav-img{
+    @include navMobile-img();
+}
+
+.navLayer-exit{
+    a{
+        font-size: 16px;    
+    }
+}

@@ -1,0 +1,110 @@
+@import "../../0-partial/std-mixin.scss";
+@import "../../0-partial/std-main.scss";
+@import "../../0-partial/std-header.scss";
+
+/*für die About me text classe*/
+$at-heihgt: 25%;
+$at-padding: 25px;
+/*für das About me img*/
+$ai-border: 50%;
+$ai-width: 400px;
+$ai-marginT: 25%;
+$ai-marginL: 20%;
+$ai-marginB: 5%;
+/*für das Thumbnail*/
+$tn-marginT: 25px;
+$tn-marginB: 25px;
+/*für den Thumbnail title*/
+$tt-height: 130px;
+$tt-fontS: 64px;
+/*für den Thumbnail Text*/
+$tText-marginL: 2%;
+$tText-marginB: 15px;
+$Ttext-height: 200px;
+$tText-font: 60px;
+/*für das Thumbnail img*/
+$ti-height: 500px;
+$ti-width: 100%;
+/*für den Layer*/
+$layer-width: 100%;
+$layer-height: auto;
+$layer-top: 200px;
+$layer-left: 0;
+
+.aboutme-text{
+    @include std-formatting();
+    @include std-aboutmeText();
+    margin-top: 5%;
+    font-size: 32px;
+    width: 200%;
+}
+
+.about-img{
+    @include std-aboutmeImg();
+}
+
+.main-title{
+    @include std-title();
+}
+
+.thumbnail{
+    @include std-formatting();
+    @include std-thumbnail();
+}
+
+.thumbnail-title{
+    @include std-thumbnailTitle();
+
+    padding-top: 30px;
+}
+.thumbnail-text{
+    @include std-thumbnailText();
+    
+}
+.thumbnail-img{
+    @include std-thumbnailImg();
+}
+
+.layer{
+    @include std-layer();
+
+    background-color: #28462a;
+}
+
+.layer-title{
+    position: fixed;
+    top: 0;
+    left: 150px;
+
+    width: 100%;
+    height: 90px;
+
+    text-align: left;
+    padding-left: 100px;
+    padding-top: 50px;
+    font-size: 50px;
+    background-color: #416944;
+}
+
+.layer-img{
+    width: 100%;
+    height: 500px;
+}
+
+.layer-text{
+    height: 1400px;
+    overflow: scroll;
+    p{
+        @include std-formatting();
+        text-align: left;
+        padding: 25px;
+        font-size: 32px;
+    }
+}
+
+.code-sample{
+    overflow: scroll;
+    height: 600px;
+    width: 100%;
+    background-color: #b1b1b1;
+}

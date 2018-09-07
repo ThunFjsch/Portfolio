@@ -1,0 +1,21 @@
+@import "../../0-partial/std-mixin.scss";
+@import "../../0-partial/std-nav.scss";
+
+$nav-height: 150px;
+$nav-width: 150px;
+
+nav{
+    @include navMobile-position();
+}
+
+.mobile-nav-layer{
+    @include navMobile-layer();
+}
+
+.mobile-nav-layer-exit{
+    @include navMobile-layerExit();
+}
+
+.nav-img{
+    @include navMobile-img();
+}

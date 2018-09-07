@@ -1,0 +1,86 @@
+/*# sourceMappingURL=main.scss.map */
+
+/*Body*/
+body{
+    background-color: #28462a;
+    color: white;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    list-style-type: none;
+}
+
+@media screen and (max-width: 320px){
+/*Header*/
+@import "1-mobile320px/1-header/header.scss";
+
+/*Nav*/
+@import "1-mobile320px/2-nav/nav.scss";
+
+/*Main*/
+@import "1-mobile320px/3-main/mainSec.scss";
+}
+
+@media screen and (min-width: 321px) and (max-width: 369px){
+    /*Header*/
+    @import "2-mobile375px/1-header/header.scss";
+    
+    /*Nav*/
+    @import "2-mobile375px/2-nav/nav.scss";
+    
+    /*Main*/
+    @import "2-mobile375px/3-main/mainSec.scss";
+}
+
+@media screen and (min-width: 370px) and (max-width: 425px ){
+    /*Header*/
+    @import "3-mobile425px/1-header/header.scss";
+    
+    /*Nav*/
+    @import "3-mobile425px/2-nav/nav.scss";
+    
+    /*Main*/
+    @import "3-mobile425px/3-main/mainSec.scss";
+}
+
+@media screen and (min-width: 425px) and (max-width: 769px){
+    /*Header*/
+    @import "4-tablet770px/1-header/header.scss";
+    
+    /*Nav*/
+    @import "4-tablet770px/2-nav/nav.scss";
+    
+    /*Main*/
+    @import "4-tablet770px/3-main/mainSec.scss";
+}
+
+@media screen and (min-width: 770px){
+    /*Header*/
+    @import "5-laptop1024px/1-header/header.scss";
+    
+    /*Nav*/
+    @import "5-laptop1024px/2-nav/nav.scss";
+    
+    /*Main*/
+    @import "5-laptop1024px/3-main/mainSec.scss";
+}
+
+.is-hidden{
+    display: none;
+}
+
+.layer-closer{
+    background-color: #416944;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 150px;
+    height: 150px;
+}

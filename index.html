@@ -1,0 +1,1086 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Arin´s Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <div class="header-title">
+            <h1>Arin Artz Lopez</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="nav-ul is-desktop">
+            <li>
+                <a href="#aboutMe">Über mich</a>
+            </li>
+            <li>
+                <a href="#school">Schulprojekte</a>
+            </li>
+            <li>
+                <a href="#fcc">FreeCodeCamp Projekte</a>
+            </li>
+            <li>
+                <a href="#selfMade">Eigene Projekte</a>
+            </li>
+        </ul>
+
+        <img src="pictures/nav/menu.png" class="nav-img is-notDesktop">
+    </nav>
+
+    <div class="mobile-nav-layer-exit navLayer-exit is-hidden">
+        <img src="pictures/nav/exit.png" class="nav-img">
+    </div>
+
+    <div class="mobile-nav-layer is-notDesktop">
+        <ul>
+            <li class="navLayer-exit">
+                <a href="#aboutMe">Über mich</a>
+            </li>
+            <li class="navLayer-exit">
+                <a href="#school">Schulprojekte</a>
+            </li>
+            <li class="navLayer-exit">
+                <a href="#fcc">FreeCodeCamp Projekte</a>
+            </li>
+            <li class="navLayer-exit">
+                <a href="#selfMade">Eigene Projekte</a>
+            </li>
+        </ul>
+    </div>
+
+    <main>
+
+        <div class="aboutme-text" id="aboutMe">
+
+            <img src="pictures/aboueMe/arin.jpg" class="about-img">
+
+            <p>
+                Kleiner Disclaimer:
+                Ich weiß das diese Seite nicht fertig und noch lange nicht Perfekt ist. Ich habe diese Seite geschrieben, um grob zu zeigen, was ungefähr meine Fähigkeiten sind. Ich weiß, dass es ein Paar Bugs mit den bxSlider gibt, die ich noch nicht lösen konnte. Dennoch schließe ich dieses Projekt ab, um mit anderen dingen anzufangen und dort meine Skills beim Programmieren zu verbessern und nicht mit HTML und CSS/SASS.
+                Ich hoffe, trotzdem das ihr Spaß auf meiner Seite habt. Mehr zu meinen kommenden Projekten, kann man unter letzte Worte lesen. Und nun gehts Los.<br><br>
+
+                Moin, ich bin Arin und mache aktuelle ein Fachabitur im Bereich Elektronik und Informationstechnik. Während der zeit habe
+                ich bis jetzt überwiegen in der Schule was über Elektronik, dabei speziell eigene Platinen Löten und nach
+                Schaltpläne bauen, Berechnung von Schaltungen und Messen von Spannung und Strom. Im Bereich IT haben wir
+                überwiegend was im Bereich SQL und C# gemacht. Der Stoff in der Schule vor allem im Bereich IT war nicht
+                so lehrreich und informativ wie ich mir gewünscht hätte. Daher habe ich zu Hause mir vor allem Webapp Entwicklung
+                angeschaut. Da ich schon vor der Schule HTML und CSS konnte, fing ich an mir die neusten Updates anzuschauen
+                (HTML5 und CSS3). Danach fing ich an mit Javascript, um meine Seiten Dynamischer zu gestalten. Dann kam eine
+                pause, von 2 Monaten, da dort die ganzen letzten Klausuren der Unterstufe waren und ich da am meisten Zeit
+                hereinstecken wollte, um gute Noten zu bekommen. Im schulischen Praktikum, das ich bei der eLearning Manufaktur
+                gemacht habe wurde mir Jquery gezeigt, das ist mein erstes Javascript Framework was ich gelernt habe. Parallel
+                zum Praktikum habe ich mir Sass angeschaut, was auch mein erstes CSS Framework ist. Aktuell bin ich Software
+                technisch meine Javascript und Sass Skills weiter zu entwickeln. Hardware technisch bin ich aktuell mit meinen
+                Raspberry Pi einen Webserver mit Cloudspeicher zu bauen. Also zu dem Zeitpunkt wo Sie das hier lesen bin
+                ich schon fertig, da diese Seite auf den Raspberry läuft. Ich bin gespannt, was mich in meiner Zukunft erwarten
+                wird. Das was ich jetzt weiß ist das viele Projekte noch folgen werden.
+            </p>
+            <div id="school"></div>
+        </div>
+
+        <div class="project-layer">
+
+            <div class="layer-closer is-hidden">
+                <img src="pictures/nav/exit.png" class="nav-img">
+            </div>
+
+            <div class="main-title">
+                <h1 id="school">Schulprojekte</h1>
+            </div>
+            <ul class="thumbnail-inline">
+                <li class="thumbnail-inline-content">
+                    <div class="thumbnail">
+                        <h2 class="thumbnail-title">
+                            Der Kran
+                        </h2>
+
+                        <div class="thumbnail-text">
+                            Das war das erste größere Projekt im Unterricht
+                        </div>
+
+                        <img class="thumbnail-img" src="pictures/school-projekt/kran/kran.PNG">
+
+                        <div class="layer is-hidden">
+
+                            <div class="layer-title">
+                                Der Kran
+                            </div>
+
+                            <div class="layer-text">
+
+                                <p>
+                                    Das war das erste größere Projekt im Unterricht mit der Sprache C#.
+                                    Die Aufgabe war gewesen einen Kran zu entwickeln der den Arm Ausfahren kann und den Hacken rauf 
+                                    und runter fahren kann. Als Erstes habe ich mich um das Design des Krans gekümmert. 
+                                    Ein Paar Buttons und fertig war die Geschichte.<br>
+                                    Danach begann ich dann den Buttons leben zu geben.
+                                    Angefangen habe ich dann mit den Hacken Funktionen, dafür habe ich eine einfache Funktion geschrieben, 
+                                    die einen Wert entgegennimmt. Bei der wird der gegebene wert der 
+                                    Hacken mit hacken.height += i um den wert I erweitert. Dadurch wird dann die Höhe des Hackens verstellt.
+                                </p>
+
+                                <div class="code-sample">
+                                    <p>
+                                        //<br>
+                                        // Haken Ausfahr <br>
+                                        //<br>
+                                        private void btc_HakenAus_Click(object sender, EventArgs e)<br>
+                                        {<br>
+                                            HakenControl(10);   //Verweis auf die Methode HakenControl<br>
+                                        }<br>
+                                        //<br>
+                                        // Haken Einfahr<br>
+                                        //<br>
+                                        private void btc_HakenEin_Click(object sender, EventArgs e)<br>
+                                        {<br>
+                                            if (Haken.Height > 20)<br>
+                                                HakenControl(-10);  //Verweis auf die Methode HakenControl<br>
+                                            else MessageBox.Show("Der Haken kann nicht kürzer werden");<br>
+                                        }<br>
+
+                                        //<br>
+                                        // Haken Kontrollen Methode<br>
+                                        //<br>
+                                        private void HakenControl(int i)<br>
+                                        {<br>
+                                            Haken.Height += i;  //Haken wird um i in der der Höhe verlängert<br>
+                                        }<br>
+                                    </p>
+                                </div>
+
+                                <p>
+                                    Danach habe ich mich darum gekümmert das man den Ausleger weiter nach vorn oder hinten bewegen kann. 
+                                    Dafür habe ich keine Funktionen geschrieben, sondern habe alles direkt in die Buttons geschrieben. 
+                                    Dabei wurde überprüft, ob die Länge über 10 liegt. Wenn die If abfrage true ist, 
+                                    dann wird der Hacken und als Ausleger 10px erweitert, beim Einfahren ist es fast identisch nur 
+                                    das sich die if Abfrage ändert da es dort nicht kleiner als 0 werden soll.
+                                </p>
+
+                                <div class="code-sample">
+                                    <p>
+                                        //<br>
+                                        // Ausleger Ausfahr<br>
+                                        //<br>
+                                        private void btc_AuslegerAus_Click(object sender, EventArgs e)<br>
+                                        {<br>
+                                        int i = 10;     // i wird mit 10 deklariert<br>
+                                        AuslegerPanel.Width += i;   //Ausleger Weite wird mit 10 erweitert<br>
+                                        <br>
+                                        if (AuslegerPanel.Width > 10)   //Abfrage ob die Weite noch über 10 liegt<br>
+                                            {<br>
+                                                AuslegerPanel.Left -= i;    //Ausleger wird um 10 Pixel nach Links verschoben<br>
+                                                Haken.Left -= i;    //Haken wird um 10 Pixel nach Links verschoben<br>
+                                            }<br>
+                                        }<br>
+                                        //<br>
+                                        // Ausleger Einfahr<br>
+                                        //<br>
+                                        private void btc_AuslegerEin_Click(object sender, EventArgs e)<br>
+                                        {<br>
+                                            if (AuslegerPanel.Width > 50)<br>
+                                            {<br>
+                                                int i = 10;  //i wird mit 10 deklariert<br>
+                                                AuslegerPanel.Width -= i;   //Ausleger wird um 10 Pixel verkürzt<br>
+                                                if (AuslegerPanel.Width != 0)   //Prüfung ob Auslegher nicht 0 ist<br>
+                                                {<br>
+                                                    AuslegerPanel.Left += i;    //Ausleger wird um 10 Pixel nach Rechts verschoben<br>
+                                                    Haken.Left += i;    //Haken wird um 10 Pixel nach Rechtss verschoben<br>
+                                                }<br>
+                                            }<br>
+                                            else MessageBox.Show("Der Ausleger kann nicht kürzer werden");<br>
+                                        }<br>
+                                    </p>
+                                </div>
+
+                                <p>
+                                    Dann kam relative viel gleicher Code. Da ging es um die Bewegung des Krans. Dabei habe ich den funktions Aufruf 
+                                    wie bei dem hacken und die rechts links Bewegung sind keine Unterschiede. Der Code steht trotzdem 
+                                    hier drunter.
+                                </p>
+
+                                <div class="code-sample">
+                                    <p>
+                                        //<br>
+                                        // Kran Nach Rechts<br>
+                                        //<br>
+                                        private void btc_KranRechts_Click(object sender, EventArgs e)<br>
+                                        {<br>
+                                            KranBewegung(10);   //Verweis auf die Kran Bewegungs Methode<br>
+                                        }<br>
+                                        //<br>
+                                        // Kran Nach Links<br>
+                                        //<br>
+                                        private void btc_KranLinks_Click(object sender, EventArgs e)<br>
+                                        {<br>
+                                            KranBewegung(-10);  //Verweis auf die Kran Bewegungs Methode<br>
+                                        }<br>
+                                        //<br>
+                                        // Kran Hals Einfahren<br>
+                                        //<br>
+                                        private void btc_KranHalsEinfahren_Click(object sender, EventArgs e)<br>
+                                        {<br>
+                                            if (KranHals.Height > 30)   //Abfrage ob der Kran Hals größer als 30 pixel ist <br>
+                                            {<br>
+                                                KranHals.Height -= 10;  //Kran Hals wird um 10 Pixel verkürzt<br>
+                                                KranHals.Top += 10;     //Kran Hals wird um 10 Pixel nach unten geschoben<br>
+                                                KranHalsBewegung(10);   //Verweis auf die Kran Hals Bewegungs Methode<br>
+                                            }<br>            
+                                            else MessageBox.Show("Der Hals kann nicht noch kürzer");<br>                                            
+                                        }<br>
+                                        //<br>
+                                        // Kran Hals Ausfahren<br>
+                                        //<br>
+                                        private void btc_KranHalsAusfahren_Click(object sender, EventArgs e)<br>
+                                        {<br>
+                                            if (KranHals.Height < 300)<br>
+                                            {<br>
+                                                KranHals.Height += 10;  //Kran Hals Höhe wird um 10 Pixel verlängert<br>
+                                                KranHals.Top -= 10;     // Kran Hals wird um 10 Pixel nach oben verschoben<br>
+                                                KranHalsBewegung(-10);  //Verweis auf die Kran Hals Bewegungs Methode<br>
+                                            }<br>
+                                            else MessageBox.Show("Der Hals kann nicht höher");<br>
+                                        }<br>
+                                        //<br>
+                                        // Kran Hals Methode<br>
+                                        //<br>
+                                        private void KranHalsBewegung(int i)<br>
+                                        {<br>
+                                            Haken.Top += i; //Haken wird um i verschoben<br>
+                                            AuslegerPanel.Top += i; //Ausleger wird um i verschoben<br>                   
+                                        }<br>
+                                        //<br>
+                                        // Kran Bewegung Methode<br>
+                                        //<br>
+                                        private void KranBewegung(int i)<br>
+                                        {<br>
+                                            Haken.Left += i;    //Haken wird um i nach Links oder Rechts verschoben<br>
+                                            AuslegerPanel.Left += i;    //Ausleger wird um i nach Links oder Rechts verschoben<br>
+                                            KranHals.Left += i; //Kran Hals wird um i nach Links oder Rechts verschoben<br>
+                                            Rumpf.Left += i;    //Rumpf wird um i nach Links oder Rechts verschoben<br>
+                                        }<br>
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </li>
+                <li class="thumbnail-inline-content">
+                    <div class="thumbnail">
+                        <h2 class="thumbnail-title">
+                            Bruchrechner
+                        </h2>
+
+                        <div class="thumbnail-text">
+                            Bei diesem Schulprojekt
+                        </div>
+
+                        <img src="pictures/school-projekt/bruch/burchrechner.PNG" class="thumbnail-img">
+
+                        <div class="layer is-hidden" id="1-layer">
+
+                            <div class="layer-title">
+                                Bruchrechner
+                            </div>
+
+                            <div class="layer-text">
+
+                                <p>
+                                    Bei diesem Schulprojekt, was gegen Ende des Schuljahres war, konnten wir uns ein Projekt heraussuchen. Da habe ich mich für
+                                    den Bruchrechner entschieden da es für mich das Schwerste war, das man dort auswählen
+                                    konnte, da man keine .math class zur Verfügung hatte und den Bruch als Wurzel nehmen
+                                    können muss laut Aufgabe. Als ich zu Hause angefangen hatte arbeitete ich als Erstes
+                                    das Design aus und fing an einfache Funktionen einzufügen (Help, Exit Buttons). Dazu
+                                    gibt es nichts Interessantes. Danach habe ich angefangen meine Inputs variablen zu geben.
+                                </p>
+
+                                <div class="code-sample">
+                                    <p>
+                                        int fInteger = Convert.ToInt32(firstInteger.Text); //Input of the varibel (Standard Setting to 0 <br>                                        int
+                                        fCounter = Convert.ToInt32(counterOne.Text); <br> int fDeno = Convert.ToInt32(firstDenominator.Text);
+                                        <br>
+                                        <br> int sInteger = Convert.ToInt32(secondInteger.Text); <br> int sCounter = Convert.ToInt32(secondConter.Text);
+                                        <br> int sDeno = Convert.ToInt32(secondDenominator.Text);<br>
+                                    </p>
+                                </div>
+
+                                <p>
+                                    Nachdem die Inputs gegeben waren habe ich eine ellenlange if abfrage genommen die checkt, welche rechen art man über die
+                                    Radio Buttons ausgewählt hat. Zu der Zeit vielen mir Switch Case Anwendungen noch fremd
+                                    und zu Kompliziert ^^.
+                                </p>
+
+                                <div class="code-sample">
+                                    <p>
+                                        //If statemens to proof what needs to Calculate<br> // if the radio button is true
+                                        the following function will Calculate<br> if (plus.Checked == true)<br> {
+                                        <br> Add(fInteger,fCounter,fDeno,sInteger,sCounter,sDeno); // Jump to the Add function
+                                        with the named Parameter<br> }
+                                        <br> else if (minus.Checked == true)<br> {
+                                        <br> Minus(fInteger, fCounter, fDeno, sInteger, sCounter, sDeno); // Jump to the
+                                        Minus function with the named Parameter<br> }
+                                        <br> else if (times.Checked == true)<br> {
+                                        <br> Times(fInteger, fCounter, fDeno, sInteger, sCounter, sDeno); // Jump to the
+                                        Times function with the named Parameter<br> }
+                                        <br> else if (divide.Checked == true)<br> {
+                                        <br> Divided(fInteger, fCounter, fDeno, sInteger, sCounter, sDeno); // // Jump to
+                                        the Divided function with the named Parameter<br> }
+                                        <br> else if (carrotTwo.Checked == true)<br> {
+                                        <br> Square(fInteger, fCounter, fDeno); // Jump to the Square function with the named
+                                        Parameter<br> }
+                                        <br> else if (root.Checked == true)<br> {
+                                        <br> double counter = fInteger * fDeno + fCounter; //creating a counter of the first
+                                        fraction<br> double fraction = counter / fDeno; // making the whole fraction to decimal
+                                        number<br> MessageBox.Show(Convert.ToString(fraction)); //Print the Fraction decimal<br>                                        MessageBox.Show(Convert.ToString(Root(fraction)));
+                                        //Jump to Root dunction with fraction as parameter<br> }
+                                        <br> else
+                                        <br> MessageBox.Show("Wählen sie eine Rechenart aus"); //if no radio button is selected<br>
+                                    </p>
+                                </div>
+
+                                <p>
+                                    Wie man hier sehen kann leiten die If-abfragen zu den verschiedene Funktionen. Die Funktionen sind recht selbsterklärend.
+                                    Die einzigen Ausnahmen waren die Wurzel Rechnung (diese ist auch nicht super genau und
+                                    hat Abweichungen) und das Kürzen waren Kopf zerbrechend für mich gewesen. Da ich nie
+                                    wirklich stark in Mathematik war habe ich nach 2 stunden selbst versuch im Internet nach
+                                    einer Metohde gesucht, auf die ich nie gekommen wäre. Diese Funktion hat auch einen namen,
+                                    und zwar Binary numeral system Algorithm.
+                                </p>
+
+                                <div class="code-sample">
+                                    <p>
+                                        public void Add(int fInteger, int fCounter, int fDeno, int sInteger, int sCounter, int sDeno)<br>                                        {
+                                        <br> int fractionDeno = fDeno * sDeno; // is making the Denomation(nenner)<br> int
+                                        fractionCounter = (((fInteger * fDeno + fCounter) * sDeno) + ((sInteger * sDeno +
+                                        sCounter) * fDeno)); //Algorithm to calculate fraction add<br> int fractionInteger
+                                        = fractionCounter / fractionDeno; //calculating the integer of the Function<br>
+                                        <br> //Output of the raw fraction<br> FRCounter.Text = Convert.ToString(fractionCounter);<br>                                        fRDenominator.Text
+                                        = Convert.ToString(fractionDeno);<br>
+                                        <br> // Jumping to the Shorting function<br> Shorting(fractionCounter, fractionInteger,
+                                        fractionDeno);<br> }
+                                        <br>
+                                        <br> public void Minus(int fInteger, int fCounter, int fDeno, int sInteger, int sCounter,
+                                        int sDeno)<br> {
+                                        <br> int fractionDeno = fDeno * sDeno; // is making the Denomation(nenner)<br> int
+                                        fractionCounter = (((fInteger * fDeno + fCounter) * sDeno) - ((sInteger * sDeno +
+                                        sCounter) * fDeno)); //Algorithm to calculate fraction minus<br> int fractionInteger
+                                        = fractionCounter / fractionDeno; //calculating the integer of the Function<br>
+                                        <br> //Output of the raw fraction<br> FRCounter.Text = Convert.ToString(fractionCounter);<br>                                        fRDenominator.Text
+                                        = Convert.ToString(fractionDeno);<br>
+                                        <br> // Jumping to the Shorting function<br> Shorting(fractionCounter, fractionInteger,
+                                        fractionDeno);<br> }
+                                        <br>
+                                        <br> public void Times(int fInteger, int fCounter, int fDeno, int sInteger, int sCounter,
+                                        int sDeno)<br> {
+                                        <br> int fractionCounter = (fInteger * fDeno + fCounter) * (sInteger * sDeno + sCounter);
+                                        //Algorithm to calculate fraction multiply<br> int fractionDeno = fDeno * sDeno;
+                                        // is making the Denomation(nenner)<br> int fractionInteger = fractionCounter / fractionDeno;
+                                        //calculating the integer of the Function<br>
+                                        <br> //Output of the raw fraction<br> FRCounter.Text = Convert.ToString(fractionCounter);<br>                                        fRDenominator.Text
+                                        = Convert.ToString(fractionDeno);<br>
+                                        <br> // Jumping to the Shorting function<br> Shorting(fractionCounter, fractionInteger,
+                                        fractionDeno);<br> }
+                                        <br>
+                                        <br> public void Divided(int fInteger, int fCounter, int fDeno, int sInteger, int
+                                        sCounter, int sDeno)<br> {
+                                        <br> int fractionCounter = (fInteger * fDeno + fCounter) * sDeno; //taking the reciprocal(Kehrwert)
+                                        and multiplay<br> int fractionDeno = (sInteger * sDeno + sCounter) * fDeno; //same
+                                        as above<br> int fractionInteger = fractionCounter / fractionDeno; //calculating
+                                        the integer of the Function<br>
+                                        <br> //Output of the raw fraction<br> fRDenominator.Text = Convert.ToString(fractionDeno);<br>                                        FRCounter.Text
+                                        = Convert.ToString(fractionCounter);<br>
+                                        <br> // Jumping to the Shorting function<br> Shorting(fractionCounter, fractionInteger,
+                                        fractionDeno);<br> }
+                                        <br>
+                                        <br> public void Square(int fInteger, int fCounter, int fDeno)<br> {
+                                        <br> int fractionCounter = (fInteger * fDeno + fCounter) * (fInteger * fDeno + fCounter);
+                                        //Algorithm to calculate fraction multiply<br> int fractionDeno = fDeno * fDeno;
+                                        // is making the Denomation(nenner)<br> int fractionInteger = fractionCounter / fractionDeno;
+                                        //calculating the integer of the Function<br>
+                                        <br> //Output of the raw fraction<br> FRCounter.Text = Convert.ToString(fractionCounter);<br>                                        fRDenominator.Text
+                                        = Convert.ToString(fractionDeno);<br>
+                                        <br> // Jumping to the Shorting function<br> Shorting(fractionCounter, fractionInteger,
+                                        fractionDeno);<br> }
+                                        <br>
+                                    </p>
+
+                                    <p>
+                                        public static double Root(double calc) //Binary numeral system Algorithm (Thanks Github now you are dead)<br>                                        {
+                                        <br> double precision = 0.00001; //the precision of the root<br> double low = 0;
+                                        //the low point<br> double high = calc; //the user input is high<br> double mid =
+                                        0; //the mid point<br> while ((high - low) > precision) //while this parameter<br>                                        {
+                                        <br> mid = (double)((low + high) / 2);<br>
+                                        <br> //if tree that runs as long mid is smaler mid*mid then mid - precision and mid
+                                        is greater then precision plus mid<br> if ((mid - precision) >= mid * mid && mid
+                                        * mid <=( precision + mid)) <br>
+                                            break;//it to the limit<br>
+                                            <br> else if (mid * mid < calc) <br>
+                                                low = mid;<br>
+                                                <br> else <br> high = mid;<br> }
+                                                <br> return mid;<br> }
+                                                <br>
+                                    </p>
+                                </div>
+
+                                <p>
+                                    Die Kürzungen Methode war recht einfach im Gegensatz zu der Wurzel Methode. Bei der Kürzungs Methode habe ich auch im Internet
+                                    ab einen gewissen Punkt geschaut. Da hat mir der Euklidischer Algorithmus weitergeholfen
+                                    und konnte diesen erfolgreich Implementieren.
+                                </p>
+
+                                <div class="code-sample">
+                                    <p>
+                                        public void Shorting(int fractionCounter, int fractionInteger, int fractionDeno)<br>                                        {
+                                        <br> int Rest = fractionCounter - fractionInteger * fractionDeno;<br> int ggt = berechneGgt(Rest,
+                                        fractionDeno);<br>
+                                        <br> //Output of the raw fraction<br> sRInteger.Text = Convert.ToString(fractionInteger);<br>                                        sRCounter.Text
+                                        = Convert.ToString(Kürze(Rest, ggt));<br> sRDenominator.Text = Convert.ToString(Kürze(fractionDeno,
+                                        ggt));<br> }
+                                        <br> public int berechneGgt(int Zaehler, int Nenner) //Euklidischer Algorithmus<br>                                        {
+                                        <br> int zahl1 = Zaehler;<br> int zahl2 = Nenner;<br> int temp = 0;<br> int ggt =
+                                        0; <br>
+                                        <br> while (zahl1 % zahl2 != 0)<br> {
+                                        <br> temp = zahl1 % zahl2;<br> zahl1 = zahl2;<br> zahl2 = temp;<br> }
+                                        <br> ggt = zahl2;<br>
+                                        <br> return ggt;<br> }
+                                        <br> public int Kürze(int Zahl, int ggt)<br> {
+                                        <br> int ZahlRef = Zahl;<br> int ggtRef = ggt;<br>
+                                        <br> int Ergebniss = ZahlRef / ggtRef;<br>
+                                        <br> return Ergebniss;<br> }
+                                        <br>
+                                    </p>
+                                </div>
+
+                                <p>
+                                    Gegen Ende habe ich noch einen clear button eingefügt da es dafür 5 punkte mehr gab.
+                                </p>
+
+                                <div class="code-sample">
+                                    <p>
+                                        private void btn_clear_Click(object sender, EventArgs e)<br> {
+                                        <br> //Clearing all inputs<br> firstInteger.Text = "0";<br> counterOne.Text = "0";<br>                                        firstDenominator.Text
+                                        = "0";<br> secondConter.Text = "0";<br> secondDenominator.Text = "0";<br> secondInteger.Text
+                                        = "0";<br> }
+                                        <br>
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </li>
+                <li class="thumbnail-inline-content">
+                    <div class="thumbnail">
+                        <h2 class="thumbnail-title">
+                            Boardslide Shop
+                        </h2>
+
+                        <div class="thumbnail-text">
+                            Das hier war das größte
+                        </div>
+
+                        <img class="thumbnail-img" src="pictures/school-projekt/skate.PNG">
+
+                        <div class="layer is-hidden" id="1-layer">
+
+                            <div class="layer-title">
+                                Boardslide Shop
+                            </div>
+
+                            <div class="layer-text">
+                                <p>
+                                    Das hier war das größte und aufwendigste Schulprojekt das wir hatten. Für das Projekt sollten wir eine Webanwendung
+                                    schreiben mit der wir auf Datenbancken mit PHP zugreifen sollten. Als erstes haben wir uns eine Topic ausgsucht, 
+                                    die war auch dann ein Skateshop, danach haben wir dann unseren SQL Code geschrieben. Dieser blieb relativ Simple mit wenig oder
+                                    keinen verbindungen zu anderen Datenbanken. Wir haben jeweils eine Datenbank für Muttern, Boards, Schrauben,
+                                    und alles was dazu gehört eine eigene Datenbank angelegt.
+                                </p>
+
+                                <div class="code-sample">
+                                    <p>
+                                        CREATE DATABASE FahrbareUntersaetze;<br>
+                                        USE FahrbareUntersaetze;<br>
+                                        <br>
+                                        CREATE TABLE Board_Art<br>
+                                        (<br>
+                                        ID INT NOT NULL AUTO_INCREMENT,<br>
+                                        BoardART VARCHAR(35) NOT NULL,<br>
+                                        PRIMARY KEY(ID)<br>
+                                        );<br>
+                                        <br>
+                                        CREATE TABLE Schrauben<br>
+                                        (<br>
+                                        ID INT NOT NULL AUTO_INCREMENT,<br>
+                                        SchraubenTYPEN VARCHAR(15) NOT NULL,<br>
+                                        SchraubenPREIS INT NOT NULL,<br>
+                                        SchraubenHERSTELLER VARCHAR(40) DEFAULT 'unbekannt',<br>
+                                        PRIMARY KEY(ID)<br>
+                                        );<br>
+                                        <br>
+                                        CREATE TABLE Muttern<br>
+                                        (<br>
+                                        ID INT NOT NULL AUTO_INCREMENT,<br>
+                                        MutterTYP VARCHAR(15) NOT NULL,<br>
+                                        MutterPREIS INT NOT NULL,<br>
+                                        MutterHERSTELLER VARCHAR(40) DEFAULT 'unbekannt',<br>
+                                        PRIMARY KEY(ID)<br>
+                                        );<br>
+                                        <br>
+                                        CREATE TABLE Achsen<br>
+                                        (<br>
+                                        ID INT NOT NULL AUTO_INCREMENT,<br>
+                                        AchsenTYP VARCHAR(30) NOT NULL,<br>
+                                        AchsenPREIS INT NOT NULL,<br>
+                                        AchsenHERSTELLER VARCHAR(40) DEFAULT 'unbekannt',<br>
+                                        PRIMARY KEY(ID)<br>
+                                        );<br>
+                                        <br>
+                                        CREATE TABLE Raeder<br>
+                                        (<br>
+                                        ID INT NOT NULL AUTO_INCREMENT,<br>
+                                        RaederMATERIAL VARCHAR(30) NOT NULL,<br>
+                                        RaederPREIS INT NOT NULL,<br>
+                                        RaederHERSTELLER VARCHAR(40) DEFAULT 'unbekannt',<br>
+                                        PRIMARY KEY(ID)<br>
+                                        );<br>
+                                        <br>
+                                        CREATE TABLE Kugellager<br>
+                                        (<br>
+                                        ID INT NOT NULL AUTO_INCREMENT, /*eS GIBT KEIN iDENTITY*/<br>
+                                        KugellagerTYP VARCHAR(15) NOT NULL,<br>
+                                        KugellagerPREIS INT NOT NULL,<br>
+                                        KugellagerHERSTELLER VARCHAR(40) DEFAULT 'unbekannt',<br>
+                                        PRIMARY KEY(ID)<br>
+                                        );<br>
+                                        <br>
+                                        CREATE TABLE Griptape<br>
+                                        (<br>
+                                        ID INT NOT NULL AUTO_INCREMENT,<br>
+                                        GriptapeMATERIAL VARCHAR(20) NOT NULL,<br>
+                                        GriptapePREIS INT NOT NULL,<br>
+                                        GriptapeHERSTELLER VARCHAR(40) DEFAULT 'unbekannt',<br>
+                                        PRIMARY KEY(ID)<br>
+                                        );<br>
+                                        <br>
+                                        CREATE TABLE Brett<br>
+                                        (<br>
+                                        ID INT NOT NULL AUTO_INCREMENT,<br>
+                                        BrettMATERIAL VARCHAR(15) NOT NULL,<br>
+                                        BrettPREIS INT NOT NULL,<br>
+                                        BrettHERSTELLER VARCHAR(40) DEFAULT 'unbekannt',<br>
+                                        PRIMARY KEY(ID)<br>
+                                        );<br>
+                                    </p>
+                                </div>
+
+                                <p>
+                                    Nachdem wir die SQL Geschichte abgeschlossen hatten haben wir 
+                                    uns dann an die PHP Scripts gesetzt. Dafür brauchten wir dann nur 3 Stück. Eine fürs Löschen und fürs Sortieren.
+                                    Die fürs Sortieren 
+                                    hat einer aus der Gruppe gemacht. Mit diesem Script kann man alles Alphabetisch sortieren nach den Radiobuttons.
+                                </p>
+
+                                <div class="code-sample">
+                                    <p>
+                                        &lt;html><br>
+                                            &lt;form method = "post"&gt;<br>
+                                                Nach dem Alphabet&lt;input type="radio" name="radioButton" value=""&gt;<br>
+                                            &lt;/form&gt;<br>
+                                        &lt;/html&gt;<br>
+                                    </p>
+                                </div>
+
+                                <p>
+                                    Ich habe den Delete Script geschrieben. Da habe ich als erstes Verbindung mit der Datenbank aufgenommen. 
+                                    Danach wird geprüft, ob die post Nachricht eine Nachricht hat und dann wird der jeweilige Datensatz gelöscht.
+                                </p>
+
+                                <div class="code-sample">
+                                    <p>
+                                        &lt;?php
+                                            $db = new mysqli("localhost","root","root","fahrbareuntersaetze");<br>
+                                            if(isset($_POST['txt_del'])){<br>
+                                                $del = $_POST['txt_del'];<br>    
+                                            $db->query("DELETE FROM $tableName WHERE ID = $del");<br>
+                                            echo "&lt;script&gt; window.location.replace('$link') &lt;/script&gt;";<br>
+                                            }<br>
+                                        ?&gt;<br>
+                                    </p>
+                                </div>
+
+                                <p>
+                                    Dann hat ein Weiterer aus der Gruppe die Eingabe Funktion geschrieben. Das war auch das erste PHP Script was wir hatten. 
+                                    Bei dem Script habe ich aber die Übersicht verloren, was generell in dem Gruppen Projekt eine Herausforderung war.
+                                    Ich sehe, da nicht wirklich durch deshalb kein Script.
+                                </p>
+
+                                <p>
+                                    In den Gruppen Projekt habe ich auch ein kleines js Script geschrieben. Das war mein erstes js Script 
+                                    was ich in einem Projekt selbst geschrieben habe teilweise hatte ich, aber auch was von Stackoverflow rüberkopiert 
+                                    da es auch recht eilig war.
+                                </p>
+
+                                <div class="code-sample">
+                                    <p>
+                                        var slideIndex = 0;<br>
+                                        showSlides();<br>
+                                        <br>
+                                        function showSlides() {<br>
+                                            var i;<br>
+                                            var slides = document.getElementsByClassName("mySlides");<br>
+                                            var dots = document.getElementsByClassName("dot");<br>
+                                            for (i = 0; i < slides.length; i++) {<br>
+                                            slides[i].style.display = "none";<br>
+                                            }<br>
+                                            slideIndex++;<br>
+                                            if (slideIndex > slides.length) {slideIndex = 1}<br>   
+                                            for (i = 0; i < dots.length; i++) {<br>
+                                                dots[i].className = dots[i].className.replace(" active", "");<br>
+                                            }<br>
+                                            slides[slideIndex-1].style.display = "block";<br>
+                                            dots[slideIndex-1].className += " active";<br>
+                                            setTimeout(showSlides, 5000); // Change image every 2 seconds<br>
+                                        }<br>
+                                    </p>
+                                </div>
+
+                                <p>
+                                    Das waren regelrecht die interessantesten Sachen des Projektes gewesen. 
+                                    Wenn man das CSS oder html sehen will, kann man unter folgenden Github Link nachschauen.
+                                </p>
+                                
+
+                            </div>
+                        </div>
+
+                    </div>
+                </li class="thumbnail-inline-content">
+                </ul ">
+
+            <div class="main-title ">
+                <h1 id="fcc ">FreeCodeCamp Projekte</h1>
+            </div>
+
+            <ul class="thumbnail-inline ">
+                    <li class="thumbnail-inline-content ">
+            <div class="thumbnail ">
+                <h2 class="thumbnail-title ">
+                    Nikola Tribute Page
+                </h2>
+
+                <div class="thumbnail-text ">
+                    Bei meinen FreeCodeCamp Projekten
+                </div>
+
+                <img class="thumbnail-img " src="pictures/FCC/nikola.PNG ">
+
+                <div class="layer is-hidden " id="1-layer ">
+
+                    <div class="layer-title">
+                        Nikola Tribute Page
+                    </div>
+
+                    <div class="layer-text">
+                        <p>
+                            Bei meinen FreeCodeCamp Projekten habe ich nur HTML und CSS angewendet. Diese Projekte habe ich im April diesen Jahren gemacht. 
+                            Diese Projekte waren sehr angenehm um wieder mit dem Umgang von HTML und CSS zu gewöhnen.<br>
+                            Bei diesem Projekt sollte man eine Tribute Page machen. Dabei habe ich teile von Bootstrap verwendet. 
+                            Diese Habe ich auch über Nicola Tesla gemacht. Zur Seite selbst gibt nicht viel Besonderes eine größere Box mit einem Porträt, 
+                            Namen und was er gemacht hat. Danach eine Kleine Auflistung die Bisschen größer als die Boxen davor ist um als Eyecatcher zu wirken. 
+                        </p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </li>
+            <li class="thumbnail-inline-content ">
+            <div class="thumbnail ">
+                <h2 class="thumbnail-title ">
+                    Portfolio
+                </h2>
+
+                <div class="thumbnail-text ">
+                    Hier steht meistens der erste Satz des Textes vom Layer...
+                </div>
+
+                <img class="thumbnail-img " src="pictures/FCC/port.PNG ">
+
+                <div class="layer is-hidden " id="1-layer ">
+
+                    <div class="layer-title">
+                        Portfolio
+                    </div>
+
+                    <div class="layer-text">
+                        <p>
+                            Bei meinen FreeCodeCamp Projekten habe ich nur HTML und CSS angewendet. Diese Projekte habe ich im April diesen Jahren gemacht. 
+                            Diese Projekte waren sehr angenehm um wieder mit dem Umgang von HTML und CSS zu gewöhnen.<br>
+                            Bei diesem Projekt sollte man ein Portfolio anlegen. Dort habe ich es anders als hier gemacht. 
+                            Den dort habe ich kein js verwendet und war damit nicht mehr zufrieden gewesen. Das einzigst besondere war das Design gewesen was 
+                            ich dort verwendet habe.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            </li>
+            <li class="thumbnail-inline-content ">
+            <div class="thumbnail ">
+                <h2 class="thumbnail-title ">
+                    Cube Mainac Survey
+                </h2>
+
+                <div class="thumbnail-text ">
+                    Bei meinen FreeCodeCamp Projekten
+                </div>
+
+                <img class="thumbnail-img " src="pictures/FCC/survey.PNG ">
+
+                <div class="layer is-hidden " id="1-layer ">
+
+                    <div class="layer-title">
+                        Cube Mainac Survey
+                    </div>
+
+                    <div class="layer-text">
+                        <p>
+                            Bei meinen FreeCodeCamp Projekten habe ich nur HTML und CSS angewendet. Diese Projekte habe ich im April diesen Jahren gemacht. 
+                            Diese Projekte waren sehr angenehm um wieder mit dem Umgang von HTML und CSS zu gewöhnen.<br>
+                            Bei diesem Projekt habe ich ein Survey für eine Speed Cubing Website gemacht, diese Seite gibt es aber nicht nur das Survey.
+                            Da hatte ich viel Spaß gehabt beim Designen da mir die Farben sehr gefielen die ich da verwendet hatte. Mehr besonderes gibt es aber nicht.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            </li>
+            </ul>
+
+            <div class="main-title ">
+                <h1 id="selfMade ">Eigene Projekte</h1>
+            </div>
+
+            <ul class="thumbnail-inline ">
+            <li class="thumbnail-inline-content ">
+            <div class="thumbnail ">
+                <h2 class="thumbnail-title ">
+                    Praktikums Projekt
+                </h2>
+
+                <div class="thumbnail-text ">
+                    Dieses Projekt habe ich während des Praktikum
+                </div>
+
+                <img class="thumbnail-img " src="pictures/FCC/product.PNG ">
+
+                <div class="layer is-hidden " id="1-layer ">
+
+                    <div class="layer-title">
+                        Praktikums Projekt
+                    </div>
+
+                    <div class="layer-text">
+                        <p>
+                            Dieses Projekt habe ich während des Praktikums bei der eLearning Manufaktur gemacht. Hier habe ich die Website mithilfe von Jquery dynamisch gemacht.
+                            Das erste was ich da gemacht hatte, war ein Kalender, auf den man die einzelnen Tage anklicken kann und dann öffnet sich ein Layer, 
+                            in dem dann ein Text steht, was ich an diesen Tag gemacht habe. Dafür habe ich zwei Funktionen geschrieben die jeweils den Layer öffnen und schließen.
+                            Bei der ersten Funktion collapse wird dem Layer die Klasse is-hidden angefügt damit diese nicht mehr sichtbar ist. Dabei wird der Highlight Farbton 
+                            von dem Tag entfernt und dem Overlay auch die Klasse is-hidden hinzugefügt.
+                            Bei der Unfold Klasse werden überall oben die is-hidden Klassen entfernt. Dazu wird der vorherige Layer geschlossen, damit später nicht 10 Layer da 
+                            sind die man dann selber schließen muss.
+                        </p>
+
+                        <div class="code-sample">
+                            <p>
+                                let calenderDayOpenerCloser = {<br>
+                                <br>
+                                    $currentOpenedDayLayer_: undefined,<br>
+                                    <br>
+                                    collapse: function () {<br>
+                                        if (this.$currentOpenedDayLayer_) {<br>
+                                            this.$currentOpenedDayLayer_.addClass('is-hidden');<br>
+                                            this.$currentOpenedDayLayer_ = undefined;<br>
+                                            <br>
+                                            let $body = $('body');<br>
+                                            <br>
+                                            let $calendarEntries = $body.find('div.calender div.days');<br>
+                                            $calendarEntries.removeClass('highlighted');<br>
+                                            <br>
+                                            $body.find('div.overlay').addClass('is-hidden higher-index');<br>
+                                        }<br>
+                                    },<br>
+                                    <br>
+                                    unfold: function ($calendarEntry) {<br>
+                                        this.collapse();<br>
+                                        <br>
+                                        let $body = $('body');<br>
+                                        <br>
+                                        let $layer = $body.find('.layer[id="' + $calendarEntry.attr('id') + '-block"]');<br>
+                                        $layer.removeClass('is-hidden');<br>
+                                        <br>
+                                        $calendarEntry.addClass('highlighted');<br>
+                                        <br>
+                                        $body.find('div.overlay').removeClass('higher-index is-hidden');<br>
+                                        <br>
+                                        this.$currentOpenedDayLayer_ = $layer;<br>
+                                    },<br>
+                                    <br>
+                                    openNext: function($arrow){<br>
+                                        calenderDayOpenerCloser.collapse();<br>
+                                        calenderDayOpenerCloser.unfold($arrow);<br>
+                                    }<br>
+                                };<br>
+                                <br>
+                                window.calenderDayOpenerCloser = calenderDayOpenerCloser;<br>
+                            </p>
+                        </div>
+
+                        <p>
+                            Danach habe ich eine Scroll Animation hinzugefügt damit man beim klicken des Links nicht über die Seite springt, 
+                            sondern angenehm schnell über die Seite springt. Dazu sucht der Body als Erstes alle anchor und danach holt dieser sich dann alle 
+                            href Attribute und gibt diese dann die Eigenschaft smooth.
+                        </p>
+
+                        <div class="code-sample">
+                            <p>
+                                let anchorScrollAnimator ={<br>
+                                    <br>
+                                    scrollAnimator: function(){<br>
+                                        document.querySelectorAll('a[href^="#"]').forEach(anchor => {<br>
+                                            anchor.addEventListener('click', function (e) {<br>
+                                                e.preventDefault();<br>
+                                                <br>
+                                                document.querySelector(this.getAttribute('href')).scrollIntoView({<br>
+                                                    behavior: 'smooth'<br>
+                                                });<br>
+                                            });<br>
+                                        });<br>
+                                    }<br>
+                                  };<br>
+                                  <br>
+                                  window.anchorScrollAnimator = anchorScrollAnimator;<br>
+                            </p>
+                        </div>
+
+                        <p>
+                            Danach habe ich dann eine Bildvergrößerung geschrieben. Diese Passiert, wenn man auf ein Bild klickt, dann wird nämlich das Bild vergrößert, 
+                            damit es besser sehen kann und dann auch schließen kann. Bei dem geöffneten Bild wird die big-picture Klasse hinzugefügt, 
+                            dahinter wird das Overlay geöffnet und der Exitbutton wird sichtbar. Beim Schließen ist das halt gegenteilig. 
+                        </p>
+
+                        <div class="code-sample">
+                            <p>
+                                let enlargeReducePicture = {<br>
+                                    <br>
+                                    enlargePicture: function ($pic) {<br>
+                                        $pic.addClass('big-picture');<br>
+                                        $pic.removeClass('thumbnail');<br>
+                                        <br>
+                                        let $body = $('body');<br>
+                                        $body.find('div.overlay').removeClass('is-hidden');<br>
+                                        $body.find('button').removeClass('is-hidden');<br>
+                                    },<br>
+                                    <br>
+                                    decreasePicture: function($pic) {<br>
+                                        $pic.removeClass('big-picture');<br>
+                                        $pic.addClass('thumbnail');<br>
+                                        <br>
+                                        let $body = $('body');<br>
+                                        $body.find('div.overlay').addClass('is-hidden');<br>
+                                        $body.find('button').addClass('is-hidden');<br>
+                                    }<br>
+                                };<br>
+                                <br>
+                                window.enlargeReducePicture = enlargeReducePicture;<br>
+                            </p>
+                        </div>
+
+                        <p>
+                            Beim Slider gibt es eine Besonderheit, abgesehen davon das dieser mit dem bxslider gemacht worden ist, sucht sich dieser auch die Bilder 
+                            auf der Website zusammen. Damit kann man sich es Sparen mehrere gleiche Bilder zu verwenden.
+                        </p>
+
+                        <div class="code-sample">
+                            <p>
+                                $(document).ready(function(){<br>
+                                    <br>
+                                    const image = ('<img>');<br>
+                                    <br>
+                                    $('body').find('img.slider-pic').each(function () {<br>
+                                        let $pic = $(this);<br>
+                                            slider = ('<div><img class="slider-pic" src="'+$('.slider').append($(image).attr('src', $pic.attr('src')))+'"');<br>
+                                    });<br>
+                                    <br>
+                                    $('.slider').bxSlider();<br>
+                                });<br>
+                            </p>
+                        </div>
+
+                        <p>
+                            Das einzigste Interessante ist vielleicht noch das Hauptdokument Application. In der werden alle andere Dokumente aufgerufen. 
+                            Daher wirken die anderen Dokumente wie Klassen. Diese werden in dem Dokument zusammen geschmissen und aufgerufen.
+                        </p>
+
+                        <div class="code-sample">
+                            <p>
+                                let Application = function(calenderDayOpenerCloser, enlargeReducePicture, anchorScrollAnimator) {<br>
+                                    this.calenderDayOpenerCloser = calenderDayOpenerCloser;<br>
+                                    this.enlargeReducePicture = enlargeReducePicture;<br>
+                                    this.anchorScrollAnimator = anchorScrollAnimator;<br>
+                                    this.themeSwitcher = themeSwitcher;<br>
+                                };<br>
+                                <br>
+                                Application.prototype.run = function() {<br>
+                                    $('body').find('div.days').each(function() {<br>
+                                        let $calendarEntry = $(this);<br>
+                                        <br>
+                                        $calendarEntry.on('click', function() {<br>
+                                            calenderDayOpenerCloser.unfold($calendarEntry);<br>
+                                        });<br>
+                                    });<br>
+                                    <br>
+                                    $('body').find('button.exit').each(function() {<br>
+                                        let $layer = $(this);<br>
+                                        <br>
+                                        $layer.on('click', function() {<br>
+                                            calenderDayOpenerCloser.collapse();<br>
+                                        })<br>
+                                    });<br>
+                                    <br>
+                                    $('body').find('div data-dayLink').each(function(){<br>
+                                        let $arrow = $(this);<br>
+                                        console.log($arrow)<br>
+                                        <br>
+                                        $arrow.on('click', function () {<br>
+                                            calenderDayOpenerCloser.openNext($arrow);<br>
+                                        });<br>
+                                    });<br>
+                                    <br>
+                                    $('body').find('div .click-me').each(function() {<br>
+                                        let $pic = $(this);<br>
+                                        <br>
+                                        $pic.on('click', function() {<br>
+                                            enlargeReducePicture.enlargePicture($pic);<br>
+                                        });<br>
+                                    });<br>
+                                    <br>
+                                    $('body').find('button').each(function() {<br>
+                                        let $button = $(this);<br>
+                                        <br>
+                                        $button.on('click', function() {<br>
+                                            enlargeReducePicture.decreasePicture($('body').find('div .click-me'));<br>
+                                        });<br>
+                                    });<br>
+                                    <br>
+                                    $('body').find('a').each(function(){<br>
+                                        let anchor = this;<br>
+                                        anchor.addEventListener('click', function() {<br>
+                                          anchorScrollAnimator.scrollAnimator();<br>
+                                        });<br>
+                                    });<br>
+                                    <br>
+                                    $('body').find('.themes').on('change', function(){<br>
+                                        themeSwitcher.themeSwitcher();<br>
+                                    })<br>
+                                };<br>
+                                <br>
+                                window.Application = Application;<br>
+                            </p>
+                        </div>
+
+                        <p>
+                            Das war es größtenteils auf der Seite, wenn man mehr sehen will, kann man es unter diesen Link auf GitHub.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            </li>
+
+            <li class="thumbnail-inline-content ">
+                <div class="thumbnail ">
+                    <h2 class="thumbnail-title ">
+                        Blog
+                    </h2>
+    
+                    <div class="thumbnail-text ">
+                        Ich hatte auch noch meinen ersten Ansatz
+                    </div>
+    
+                    <img class="thumbnail-img " src="pictures/FCC/survey.PNG ">
+    
+                    <div class="layer is-hidden " id="1-layer ">
+    
+                        <div class="layer-title">
+                            Blog
+                        </div>
+    
+                        <div class="layer-text">
+                            <p>
+                                Ich hatte auch noch meinen ersten Ansatz eines Blockes gemacht. Diesen hatte ich auch bei einem Webhost Hochgeladen.
+                                Da aber diese Seite gelöscht wurde wegen Inaktivität, da der Anbieter kostenlos war und ich beim Reset meines PC´s alle meine Projekte
+                                gelöscht wurden, da wusste ich anscheinend noch nicht wozu man Clouds verwendet oder GitHub, habe ich nichts mehr davon bis auf das Bild.
+                                Die “Blog„ an sich hat viel Spaß gemacht. Er hatte zwar kein js gehabt aber hatte seine Tücken mit dem CSS gehabt.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                </li>
+
+            <li class="thumbnail-inline-content ">
+                    <div class="thumbnail ">
+                <h2 class="thumbnail-title ">
+                    Letzte Worte
+                </h2>
+
+                <div class="thumbnail-text ">
+                    Kommende Projekte.
+                </div>
+
+                <img class="thumbnail-img " src="pictures/FCC/product.PNG ">
+
+                <div class="layer is-hidden " id="1-layer ">
+
+                    <div class="layer-title">
+                        Letzte Worte
+                    </div>
+
+                    <div class="layer-text">
+                        <p>
+                            Kommende Projekte.
+                            Wenn wir wieder stabiles Internet haben werde ich meinen Raspberry Pi Server Starten und diesen als Webserver verwenden. 
+                            Unter anderen um dann auch mal was mit Node js was zu machen, worauf ich mich sehr freue. Dabei werde ich auch meine eigene 
+                            Cloud machen und paar elektrotechnische Elemente mit einbinden, das aber mit der Hilfe vom Arduino. Ideen fürs Node js Projekt habe ich auch schon,
+                             und zwar einen Online Speed Cube Timer der auch mithilfe des js Frameworks d3.js, damit man dann seine Aktivität und auch seinen Fortschritt 
+                             sehen kann. Da werde ich mich dann auch mit Logins und all so ein Schnick schnack verwenden um die Basics von Node drauf zuhaben.
+                            Danach wollte ich eventuell eine eigene 8-Bit CPU bauen, um mehr von der PC Logik zu verstehen und auch elektrotechnisch dabei zu bleiben. 
+                            Parallel werde ich dann an meinen Blog Arbeiten um meine Node und generellen js Skills zu verbessern.<br>
+                            Dazu habe ich auch jetzt einen Codewars Account, den man hier bei Interesse finden kann.<br>
+                            Ich hoffe, man hatte Spaß auf meiner Seite.<br>
+                            Ich wünsche noch einen schönen Tag.<br>
+                        </p>
+                    </div>
+                </div>
+            </li>
+            </ul>
+        </div>
+
+    </main>
+
+</body>
+
+<script src="scripts/jquery.js "></script>
+<script src="scripts/nav/mobileNavCloser.js "></script>
+<script src="scripts/projektLayer/projectLayer.js "></script>
+<script src="scripts/mainApplication.js "></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js "></script>
+
+</html>

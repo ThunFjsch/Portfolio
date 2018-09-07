@@ -1,0 +1,23 @@
+$header-height: 0;
+$header-left: 0;
+$header-centerTitle: 0;
+$header-leftTitle: 0;
+
+@mixin headerMobile-position{
+    position: fixed;
+    top: 0;
+    left: $header-left;
+    width: 100%;
+    height: $header-height;
+}
+
+@mixin headerMobile-title{    
+    h1{
+        position: fixed;
+        top: $header-centerTitle;
+        left: $header-leftTitle;
+
+        margin: 0;
+        padding: 0;
+    }
+}
